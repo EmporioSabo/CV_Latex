@@ -1,0 +1,105 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Adam Maytoussi} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{+177 1701 3017 \\ Shanghai, China} 
+\address{\href{mailto:adamaytoussi@gmail.com}{adamaytoussi@gmail.com} \\ 
+ \href{https://www.linkedin.com/in/adam-maytoussi}
+{linkedin.com/in/adam-maytoussi}}  %
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Master of Computer Science and Engineering}, University of Technology of Compiègne \hfill {Expected 2026}
+
+{\bf Double Degree in Electronic Information (Mechatronics Eng.)}, Shanghai University \hfill {Expected 2027}
+
+\end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Software Developer Intern} \hfill Sept 2024 - Feb 2025\\
+Hamynä SAS \hfill \textit{Lille, France}
+ \begin{itemize}
+    \itemsep -3pt {} 
+     \item Developed a GDPR compliance monitoring feature for 600+ organizations within a full-stack SaaS platform
+ \end{itemize}
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{AWARDS \& COMPETITION}
+\vspace{-1.25em}
+\item \textbf{French Tech Shanghai 2026 AI Hackathon} -  \href{https://www.linkedin.com/posts/utseus_hackathon-ai-innovation-activity-7419665729870000128-1pQ7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAg753cBr2yJYV0Q29TNtiQJozXlz5xMSM0}{\textbf{1st Place}} \textbar\textit{ C, STM32N6, Edge AI, Computer Vision}
+\vspace{-3pt}
+\begin{itemize}
+    \itemsep -3pt
+    \item Selected and validated YOLOv8/YOLOv11 pose estimation models from STM32 Model Zoo for fatigue/posture detection
+    \item Developed and deployed detection features on STM32N6; handled flashing, debugging, and firmware iteration
+    \item Implemented UART communication to transmit detection states to host system for seat adjustment
+\end{itemize}
+\item \textbf{UTAC 2025 Competition} - \href{https://www.linkedin.com/pulse/lutc-remporte-la-1%C3%A8re-place-%C3%A0-l%C3%A9preuve-libre-du-challenge-utac-jxdve}{\textbf{1st Place}}  \textbf{(Free Category)} \textbar\textit{ Python, CARLA, SUMO, Optimization}
+\vspace{-3pt}
+\begin{itemize}
+    \itemsep -3pt
+    \item Designed fleet rebalancing strategy reducing pick-up time via idle vehicle repositioning
+    \item Integrated SUMO with CARLA via TraCI for realistic traffic simulation
+\end{itemize}
+\item \textbf{DIIS BUILD 3.0 Hackathon} - \textbf{Incubation Impact Award (10,000 RMB)} \textbar\textit{ Python, CLIP, FastAPI}
+\vspace{-3pt}
+\begin{itemize}
+    \itemsep -3pt
+    \item Implemented CLIP zero-shot classifier for Mahjong tile recognition, replacing brittle classical CV approach
+    \item Built HTTP adapter abstracting robotic arm commands (pick, observe, throw) for orchestrator consumption
+\end{itemize}
+\end{rSection} 
+\begin{rSection}{PROJECTS}
+\vspace{-1.25em}
+\item \textbf{Nintendo Switch IoT Telemetry System} \textbar\textit{ C, MQTT, Podman, Cross-Compilation, Embedded Networking}
+\vspace{-3pt}
+\begin{itemize}
+    \itemsep -3pt
+    \item Built a cross-compiled MQTT telemetry client for Nintendo Switch (ARM Cortex-A57), collecting and publishing 5 hardware metrics (SoC/PCB temperatures, battery, WiFi RSSI) at configurable intervals (5-30s)
+    \item Implemented a multi-threaded producer/consumer architecture handling concurrent sensor polling and network I/O over BSD sockets
+    \item Deployed a full observability pipeline (Mosquitto, Telegraf, InfluxDB 2.x, Grafana) via Podman Compose, with bidirectional MQTT command interface for remote configuration and on-demand telemetry
+\end{itemize}
+\item \textbf{Distributed Stock Market Simulation} \textbar\textit{ Go, Distributed Algorithms}
+\vspace{-3pt}
+\begin{itemize}
+    \itemsep -3pt
+    \item Designed with team a distributed stock market simulation with replicated order book across processes in a ring topology
+    \item Implemented Ricart-Agrawala mutex and Ring Election algorithms
+    \item Leveraged TCP for inter-processes communications to support dynamic node management
+\end{itemize}
+\end{rSection} 
+
+\begin{rSection}{SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming & C, Python, x86/ARM assembly, Go, VHDL, RAPID\\
+Embedded & STM32, GDB, GPIO, UART, MQTT, Make\\
+Tools & Linux, Git, Bash, Podman, CARLA, SUMO, Tailscale, FastAPI\\
+Languages & English (fluent), French (native), Arabic (intermediate), Mandarin Chinese (HSK 2-3)\\
+\end{tabular}\\
+\end{rSection}
+\vspace{-1.25em}
+
+\end{document}
